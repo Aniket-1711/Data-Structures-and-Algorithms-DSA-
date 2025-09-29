@@ -1,0 +1,59 @@
+=== SOLUTION CODE ===
+
+Language: Java
+Submission Date: September 29, 2025
+Status: Accepted
+Runtime: 5 ms (beats 39.82% of Java submissions)
+Memory: 48.2 MB
+
+```java
+class MinStack {
+    Stack<Integer> stack;
+    PriorityQueue<Integer> queue;
+    
+    public MinStack() {
+        stack = new Stack<>();
+        queue = new PriorityQueue<>();
+    }
+    
+    public void push(int val) {
+        stack.push(val);
+        queue.add(val);
+    }
+    
+    public void pop() {
+        queue.remove(stack.pop());
+    }
+    
+    public int top() {
+        return stack.peek();
+    }
+    
+    public int getMin() {
+        return queue.peek();
+    }
+}
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.push(val);
+ * obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.getMin();
+ */
+```
+
+=== COMPLEXITY ANALYSIS ===
+
+Time Complexity:
+- push(val): O(log n) - due to PriorityQueue insertion
+- pop(): O(n) - PriorityQueue remove operation
+- top(): O(1) - Stack peek operation
+- getMin(): O(1) - PriorityQueue peek operation
+
+Space Complexity: O(n) - storing n elements in both stack and priority queue
+
+Note: While this solution works, it doesn't achieve the O(1) requirement for all operations. 
+The pop() operation takes O(n) time due to PriorityQueue.remove(). A better approach would 
+use two stacks to achieve O(1) for all operations.
