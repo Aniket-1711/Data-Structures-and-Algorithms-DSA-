@@ -1,0 +1,24 @@
+Floyd's Cycle-Finding Algorithm (Tortoise and Hare)
+
+Approach:
+This solution uses two pointers - a slow pointer and a fast pointer.
+
+The slow pointer moves one step at a time (slow = slow.next)
+The fast pointer moves two steps at a time (fast = fast.next.next)
+
+If there is a cycle in the linked list:
+- Eventually, the fast pointer will catch up to the slow pointer
+- When slow == fast, we know a cycle exists
+- Return true
+
+If there is no cycle:
+- The fast pointer will reach the end (null) first
+- Return false
+
+Why this works:
+- If there's a cycle, both pointers will eventually be inside the cycle
+- Since the fast pointer moves twice as fast, it will eventually meet the slow pointer
+- The gap between them decreases by 1 in each iteration
+
+Time Complexity: O(n) - where n is the number of nodes
+Space Complexity: O(1) - only using two pointers
