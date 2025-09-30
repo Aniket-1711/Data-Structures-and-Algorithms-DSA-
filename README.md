@@ -42,11 +42,6 @@ This makes it **easy to revise later** and compare different approaches for the 
 4. **Understand Complexity**: Review the time and space complexity analysis
 5. **Practice Edge Cases**: See how different edge cases are handled
 
-## 🏗️ Current Problems
-
-- **3Sum Problem** (`3Sum_2025_09_23_1/`)
-  - Classic array problem with multiple solution approaches
-  - Brute force, two-pointer, and hash-based solutions included
 
 ## 🎨 Code Quality Standards
 
