@@ -119,6 +119,7 @@ Final ans = 6 💧
 * Two-pointer technique can **replace extra space arrays** for left and right maxima.
 * Always compare `lmax` and `rmax` to decide which pointer to move.
 * Optimal for both **time and space** in trapping rain water problems.
+---
 
 ## Why Two-Pointer Approach Works 💡
 
