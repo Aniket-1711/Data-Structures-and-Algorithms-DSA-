@@ -84,6 +84,14 @@ nums = [1, 2, 3]
 | 3    | 3 ^ 3 = 0 | XOR = 0 → need to remove one element |                 |
 
 ✅ Hence, longest subsequence length = 3 - 1 = 2.
+
+## ⏱️ Time Complexity
+
+**O(n)** — We iterate through the array once to calculate XOR and check if all elements are zero.
+
+## 💾 Space Complexity
+
+**O(1)** — We only use a few extra variables (xor and allzeros).
 ## 🧠 Summary
 | Case                     | Condition          | Result         |
 | ------------------------ | ------------------ | -------------- |
