@@ -54,7 +54,7 @@ Think of it like: you have nodes `A -> B -> C` and you are given `B`. To remove 
 ⚙️ **Time Complexity:** O(1)
 🧮 **Space Complexity:** O(1)
 
-Have you understood the intuition so far, Aniket? 🤔
+
 
 ---
 
@@ -67,7 +67,7 @@ Have you understood the intuition so far, Aniket? 🤔
 
 After these steps the list is updated and the target value is removed.
 
-Have you understood the algorithm steps, Aniket? 😊
+
 
 ---
 
@@ -95,7 +95,7 @@ class Solution {
 ✅ **Time Complexity:** O(1)
 ✅ **Space Complexity:** O(1)
 
-Have you understood the code and its complexity, Aniket? 💭
+
 
 ---
 
