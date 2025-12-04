@@ -10,16 +10,16 @@ This problem asks us to choose two **different indices** from an array and retur
 
 To get the maximum product, we should always pick the **two largest numbers** in the array. Subtract 1 from each, then multiply.
 
-## ✅ Efficient Approach (O(n))
+## ✅ Efficient Approach (O(n)) Time complexity and with constant space (O(1))
 
 We scan the array once and keep track of:
 
 * The **largest** number
 * The **second largest** number
 
-Then we apply the formula.
+Then we apply the formula. No sorting Required
 
-## 💡 Java Code
+## 💡 Java Code 1
 
 ```java
 class Solution {
@@ -40,6 +40,19 @@ class Solution {
     }
 }
 ```
+
+## 💡 Java Code 2 using sorting (Nlog(N)) time complexity and constant space (O(1))
+
+```java
+class Solution {
+     public int maxProduct(int[] nums) {
+     Arrays.sort(nums);
+     return (nums[nums.length-2]-1)*(nums[nums.length-1]-1);
+    }
+}
+```
+
+
 
 ## 📌 Example
 
